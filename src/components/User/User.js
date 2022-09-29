@@ -1,18 +1,9 @@
 import profile from '../../Images/Shakil AHamed.jpg'
 import './User.css'
 import location from '../../Images/location-dot-solid.svg'
-// import { useState } from 'react';
 
 const User = ({times}) => {
-    // const [br, setBr] = useState(0)
-    let breakTime = 0;
-    const setBreak = (id) =>{
-        console.log(id)
-        breakTime = breakTime + id;
-        // breakTime = [...br, id];
-        // setBr(breakTime)       
-    }
-    
+
     let totalTime = 0;
     for(const addTime of times){
         totalTime = (totalTime + parseFloat(addTime.time));
@@ -43,11 +34,11 @@ const User = ({times}) => {
             </div>
             <h5>Add a break</h5>
             <div className='timer d-flex p-1 pt-3 rounded mb-5'>
-                <p onClick={()=>setBreak(10)} className='time-count'>10s</p>
-                <p onClick={()=>setBreak(20)} className='time-count'>20s</p>
-                <p onClick={()=>setBreak(30)} className='time-count'>30s</p>
-                <p onClick={()=>setBreak(40)} className='time-count'>40s</p>
-                <p onClick={()=>setBreak(50)} className='time-count'>50s</p>
+                <p className='time-count'>10s</p>
+                <p className='time-count'>20s</p>
+                <p className='time-count'>30s</p>
+                <p className='time-count'>40s</p>
+                <p className='time-count'>50s</p>
             </div>
             <h5>Excercise Details</h5>
             <div className='details rounded px-2 pt-3 mb-4'>
@@ -56,7 +47,7 @@ const User = ({times}) => {
             </div>
             <div className='break-time rounded px-2 pt-3 mb-4'>
                 <h6>Break time</h6>
-                <p>{breakTime} seconds</p>
+                <p> 00 seconds</p>
             </div>
             <button className='activity-button rounded p-2'>Activity completed</button>
         </section>
