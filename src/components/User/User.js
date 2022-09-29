@@ -4,13 +4,15 @@ import location from '../../Images/location-dot-solid.svg'
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { addToDb, getProductFromDb } from '../FakeDb/Fakedb';
 
 const User = ({times}) => {
     const [breakTime, setBreakTime] = useState(0);
     const notify = () => toast("Congrats you are finished all events!!");
 
     const addBreakTime = (time) =>{
-        setBreakTime(time)
+        setBreakTime(time);
+        addToDb(time);
     }
 
     let totalTime = 0;
