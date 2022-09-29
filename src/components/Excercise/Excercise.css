@@ -1,0 +1,11 @@
+.excercise-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+}

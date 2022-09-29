@@ -1,0 +1,66 @@
+[
+    {
+      "id": "1",
+      "picture": "https://ibb.co/PTCdd4b",
+      "age": 30,
+      "time": "20",
+      "name": "Norton Cobb",
+      "gender": "male",
+      "about": ""
+    },
+    {
+      "id": "2",
+      "picture": "https://ibb.co/PNxtn99",
+      "age": 34,
+      "time": "20",
+      "name": "Dionne Haynes",
+      "gender": "female",
+      "about": ""
+    },
+    {
+      "id": "3",
+      "picture": "https://ibb.co/cbGVhHK",
+      "age": 23,
+      "time": "20",
+      "name": "Chasity Banks",
+      "gender": "female",
+      "about": ""
+    },
+    {
+      "id": "4",
+      "picture": "https://ibb.co/NrXTJkG",
+      "age": 25,
+      "time": "20",
+      "name": "Kelly Orr",
+      "gender": "female",
+      "about": ""
+    },
+    {
+      "id": "5",
+      "picture": "https://ibb.co/3MYCBZ8",
+      "age": 39,
+      "time": "20",
+      "name": "Lenora Howard",
+      "gender": "female",
+      "about": ""
+    },
+    {
+      "id": "6",
+      "picture": "https://ibb.co/PwkBLCs",
+      "age": 33,
+      "time": "20",
+      "name": "Tracey Hart",
+      "gender": "female",
+      "about": ""
+    },
+    {
+      "id": "7",
+      "picture": "https://ibb.co/589twQ4",
+      "age": 20,
+      "time": "20",
+      "name": "Garrett Paul",
+      "gender": "male",
+      "about": ""
+    }
+    
+  ]
