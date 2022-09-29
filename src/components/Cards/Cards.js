@@ -3,6 +3,7 @@ import './Cards.css'
 
 const Cards = props => {
     const {picture, name, age, time} = props.card;
+    
     return (
         <div className='card-container'>
             <img src={picture} alt="" />
@@ -12,7 +13,7 @@ const Cards = props => {
             <h6><span className='fw-light'>For Age:</span> {age}</h6>
             <h6><span className='fw-light'>Time required:</span> {time}s</h6>
             </div>
-            <button className='button-add fw-bold py-2'>
+            <button onClick={()=>props.addTimeToUser(props.card)}className='button-add fw-bold py-2'>
                Add to list
             </button>
         </div>

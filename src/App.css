@@ -33,3 +33,10 @@
     transform: rotate(360deg);
   }
 }
+.fitness{
+  color: rgb(27, 27, 92);
+}
+.doumble-logo{
+  width: 60px;
+  height: 60px;
+}
