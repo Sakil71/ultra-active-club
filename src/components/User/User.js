@@ -1,8 +1,17 @@
 import profile from '../../Images/Shakil AHamed.jpg'
 import './User.css'
 import location from '../../Images/location-dot-solid.svg'
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const User = ({times}) => {
+    const [breakTime, setBreakTime] = useState(0);
+    const notify = () => toast("Congrats you are finished all events!!");
+
+    const addBreakTime = (time) =>{
+        setBreakTime(time)
+    }
 
     let totalTime = 0;
     for(const addTime of times){
@@ -34,11 +43,11 @@ const User = ({times}) => {
             </div>
             <h5>Add a break</h5>
             <div className='timer d-flex p-1 pt-3 rounded mb-5'>
-                <p className='time-count'>10s</p>
-                <p className='time-count'>20s</p>
-                <p className='time-count'>30s</p>
-                <p className='time-count'>40s</p>
-                <p className='time-count'>50s</p>
+                <p onClick={()=>addBreakTime('10')} className='time-count'>10s</p>
+                <p onClick={()=>addBreakTime('20')} className='time-count'>20s</p>
+                <p onClick={()=>addBreakTime('30')} className='time-count'>30s</p>
+                <p onClick={()=>addBreakTime('40')} className='time-count'>40s</p>
+                <p onClick={()=>addBreakTime('50')} className='time-count'>50s</p>
             </div>
             <h5>Excercise Details</h5>
             <div className='details rounded px-2 pt-3 mb-4'>
@@ -47,9 +56,10 @@ const User = ({times}) => {
             </div>
             <div className='break-time rounded px-2 pt-3 mb-4'>
                 <h6>Break time</h6>
-                <p> 00 seconds</p>
+                <p> {breakTime} seconds</p>
             </div>
-            <button className='activity-button rounded p-2'>Activity completed</button>
+            <button onClick={notify} className='activity-button rounded p-2'>Activity completed</button>
+            <ToastContainer></ToastContainer>
         </section>
     );
 };

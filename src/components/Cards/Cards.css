@@ -23,7 +23,7 @@
 .button-add:hover{
     background-color: rgb(120, 67, 173);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .card-container {
       width: 180px;
       height: 400px;
