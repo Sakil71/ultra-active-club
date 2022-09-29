@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cards from '../Cards/Cards';
+import User from '../User/User';
 import './Excercise.css'
 
 const Excercise = () => {
@@ -19,8 +20,10 @@ const Excercise = () => {
                     ></Cards>)
                 }
             </div>
-            <div>
-                <h2>User Info</h2>
+            <div className='user-section bg-light rounded p-2'>
+                {
+                    <User></User>
+                }
             </div>
         </div>
     );

@@ -6,14 +6,14 @@ const Cards = props => {
     return (
         <div className='card-container'>
             <img src={picture} alt="" />
-            <div>
-            <h2>{name}</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero.</p>
-            <h4>For Age: {age}</h4>
-            <p>Time: {time}</p>
+            <div className='m-3'>
+            <h5 className='fw-bold'>{name}</h5>
+            <p className='opacity-75'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero.</p>
+            <h6><span className='fw-light'>For Age:</span> {age}</h6>
+            <h6><span className='fw-light'>Time required:</span> {time}s</h6>
             </div>
-            <button className='button-add fw-bold'>
-                <p>Add to list</p>
+            <button className='button-add fw-bold py-2'>
+               Add to list
             </button>
         </div>
     );

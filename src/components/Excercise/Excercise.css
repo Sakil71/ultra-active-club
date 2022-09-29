@@ -9,3 +9,8 @@
     margin-right: 40px;
     margin-top: 50px;
 }
+.user-section{
+    width: 250px;
+    position: sticky;
+    top: 0;
+}

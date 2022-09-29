@@ -1,9 +1,14 @@
 .card-container{
-    background-color: rgb(229, 229, 85);
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
     height: 350px;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-container img{
+    width: 250px;
+    height: 100px;
+    border-radius: 8px;
 }
 .button-add{
     width: 100%;
@@ -11,6 +16,10 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: blueviolet;
+    background-color: rgb(58, 13, 103);
+    color: whitesmoke;
     border-radius: 0 0 10px 10px;
+}
+.button-add:hover{
+    background-color: rgb(120, 67, 173);
 }
