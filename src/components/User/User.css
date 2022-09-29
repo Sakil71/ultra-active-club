@@ -13,6 +13,7 @@
 .location{
     height: 15px;
     width: 15px;
+    margin-bottom: 5px;
 }
 .user-info{
     display: flex;
